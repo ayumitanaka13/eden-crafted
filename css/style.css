@@ -1,15 +1,25 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  padding: 30px; }
+  width: 100vh;
+  color: #5b2d2d;
+  font-family: "DM Sans", sans-serif;
+  background-color: #f5e9e5; }
+
+h1 {
+  font-family: "DM Serif Display", serif; }
+
+#top {
+  height: 100vh;
+  background: center cover no-repeat url("/img/top.jpg"); }
+
+.box {
+  border: solid 0.2em #5b2d2d; }
 
 .header {
   height: 95vh;
@@ -59,7 +69,7 @@ body {
   padding: 15px 40px;
   display: inline-block;
   border-radius: 100px;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative; }
 
 .btn:hover {
@@ -80,20 +90,19 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
 .btn--white {
-  background-color: #fff;
-  color: #777; }
+  background-color: #fff; }
   .btn--white::after {
     background-color: #fff; }
 
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
 @keyframes moveInLeft {
