@@ -1,0 +1,26 @@
+{
+  "name": "eden-crafted",
+  "version": "1.0.0",
+  "description": "The website of handcrafted soap shop",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss css/ style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayumitanaka13/eden-crafted.git"
+  },
+  "keywords": [
+    "handcrafted",
+    "soap"
+  ],
+  "author": "Ayumi Tanaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayumitanaka13/eden-crafted/issues"
+  },
+  "homepage": "https://github.com/ayumitanaka13/eden-crafted#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
