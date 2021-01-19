@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -6,7 +7,6 @@
   box-sizing: border-box; }
 
 body {
-  width: 100vh;
   color: #5b2d2d;
   font-family: "DM Sans", sans-serif;
   background-color: #f5e9e5; }
@@ -14,12 +14,31 @@ body {
 h1 {
   font-family: "DM Serif Display", serif; }
 
-#top {
-  height: 100vh;
-  background: center cover no-repeat url("/img/top.jpg"); }
-
 .box {
   border: solid 0.2em #5b2d2d; }
+
+.content {
+  　width: 100vw;
+  　min-height: 100vh;
+  display: flex;
+  background: url("/img/top.jpg") center center/cover no-repeat fixed; }
+
+.contents {
+  display: flex;
+  min-height: 100vh; }
+
+.sticky {
+  position: fixed; }
+
+aside {
+  width: 20%; }
+
+main {
+  width: 80%; }
+
+#top {
+  height: 100vh;
+  background: url("/img/top.jpg") center center/cover no-repeat fixed; }
 
 .header {
   height: 95vh;
