@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="img/logo.png" />
@@ -34,6 +34,10 @@
       <div class="box main">nav</div>
     </header> -->
 
+    <!-- <div class="box" id="top">
+      <h1>Eden Crafted</h1>
+    </div> -->
+
     <div class="contents box">
       
       <aside class="box">
@@ -42,30 +46,106 @@
 
           <div class="menu box">
             <ul class="box">
-              <li>about</li>
+              <li><a href="#about">about</a></li>
               <li>/</li>
-              <li>shop</li>
+              <li><a href="#shop">shop</a></li>
               <li>/</li>
-              <li>contact</li>
+              <li><a href="#contact">contact</a></li>
+              <i class="fas fa-shopping-bag"></i>
             </ul>
           </div>
         </nav>
       </aside>
 
       <main class="box" >
+
+        <!-- top -->
         <div class="box" id="top">
           <h1>Eden Crafted</h1>
         </div>
 
+        <!-- about -->
         <div class="box" id="about">
           <div class="content box">
             <h2 class="box">100% Handcrafted Soap Locally Made.</h2>
-            <img src="/img/about2.jpg" alt="about"  class="box">
-            <h3>Vegan</h3>
-            <h3>Organic</h3>
-            <h3>Sustainable</h3>
-            <h3>Palm Oil Free</h3>
+            <div class="parent">
+              <img src="/img/about2.jpg" alt="about"  class="box">
+              <h2 class="child">Vegan<br>Organic<br>Sustainable<br>Palm Oil Free</h2>
+            </div>
             <p>We have a very simple mission, to bring the love of nature to our skin while honouring and protecting mother earth. We don’t use anything that harms our planet, our ingredients are 100% organic, sustainable, even our packaging is made of recycled paper.</p>
+          </div>
+        </div>
+
+        <!-- shop -->
+        <div class="box" id="shop">
+          <div class="content box">
+            <div class="item box">
+              <img src="/img/1.jpg" alt="about"  class="box">
+              <div class="mask box">
+                <div class="caption">
+                  <h2>Raspberry Rooibos</h2>
+                  <h3><a href="#"><i class="fas fa-shopping-bag"></i>$ 7.95</a></h3>
+                </div>
+                <p>Raspberry lends its sweet, summery scent to this pretty, red natural soap bar while real rooibos tea leaves give a mild exfoliation.</p>
+              </div>
+            </div>
+            <div class="item box">
+              <img src="/img/2.jpg" alt="about"  class="box">
+              <div class="mask box">
+                <div class="caption">
+                  <h2>Juicy Orange</h2>
+                  <h3><a href="#"><i class="fas fa-shopping-bag"></i>$ 6.95</a></h3>
+                </div>
+                <p>Oily and problem skin look out! Real orange juice and sweet orange oil rejuvenate skin while fighting blemishes in this natural soap bar.</p>
+              </div>
+            </div>
+            <div class="item box">
+              <img src="/img/3.jpg" alt="about"  class="box">
+              <div class="mask box">
+                <div class="caption">
+                  <h2>Lemongrass</h2>
+                  <h3><a href="#"><i class="fas fa-shopping-bag"></i>$ 6.95</a></h3>
+                </div>
+                <p>Add a spring to your step with our best natural soap. Lemongrass helps to open pores while the astringent properties of rosemary unclog them.</p>
+              </div>
+            </div>
+            <div class="item box">
+              <img src="/img/4.jpg" alt="about"  class="box">
+              <div class="mask box">
+                <div class="caption">
+                  <h2>Lavendar</h2>
+                  <h3><a href="#"><i class="fas fa-shopping-bag"></i>$ 7.95</a></h3>
+                </div>
+                <p>Lavender lovers unite! We’ve packed in both lavender essential oil and flowers to rejuvenate and exfoliate the skin.</p>
+              </div>
+            </div>
+
+
+            <!-- <h2 class="box">100% Handcrafted Soap Locally Made.</h2>
+            <div class="parent">
+              <img src="/img/about2.jpg" alt="about"  class="box">
+              <h2 class="child">Vegan<br>Organic<br>Sustainable<br>Palm Oil Free</h2>
+            </div>
+            <p>We have a very simple mission, to bring the love of nature to our skin while honouring and protecting mother earth. We don’t use anything that harms our planet, our ingredients are 100% organic, sustainable, even our packaging is made of recycled paper.</p> -->
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div class="box" id="contact">
+          <div class="content box">
+            <div class="item box">
+              <img src="/img/contact2.jpg" alt="about"  class="box">
+            </div>
+            <div class="item box text">
+              <div>
+                <h2>Feel free to contact us.</h2>
+                <h3>info@edencrafted.com</h3>
+                <div class="icons">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -83,6 +163,8 @@
     </div> -->
 
 
-
+  <!-- Fontawesome -->
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="js/index.js"></script>
   </body>
 </html>
