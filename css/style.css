@@ -23,7 +23,8 @@ h3 {
   font-weight: 400; }
 
 p {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  text-align: center; }
 
 a {
   text-decoration: none; }
@@ -31,6 +32,15 @@ a {
 li {
   list-style: none;
   font-size: 2.4em; }
+
+#about .content, #shop .content, #contact .content {
+  width: 100vw;
+  height: 100vh;
+  padding: 4em 4em 4em 0; }
+
+#shop .item img, #shop .item .mask, #contact img {
+  width: 100%;
+  height: 100%; }
 
 .contents {
   width: 100vw;
@@ -42,11 +52,13 @@ li {
     justify-content: center; }
     .contents__side .nav {
       height: 100vh;
-      display: flex;
       flex-direction: column;
+      display: flex;
       justify-content: space-between;
       position: fixed;
       padding: 2em 0 4em 0; }
+      .contents__side .nav img {
+        width: 100%; }
       .contents__side .nav__menu {
         display: flex;
         justify-content: center; }
@@ -64,28 +76,26 @@ li {
     width: 80%; }
 
 #top {
-  height: 100vh;
   display: flex;
   justify-content: flex-end;
+  height: 100vh;
   padding-right: 4em;
   background: url("/img/top.jpg") center center/cover no-repeat fixed; }
+  #top h1 {
+    text-align: right; }
 
 #about {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center; }
-  #about .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 4em 4em 4em 0; }
+  justify-content: center;
+  height: 100vh;
+  align-items: center; }
   #about img {
     width: 100%;
     margin: 1.6em 0; }
   #about h2 {
     text-align: right; }
   #about p {
-    text-align: center; }
+    padding: 0 1.6em; }
   #about .picture {
     position: relative; }
     #about .picture--text {
@@ -95,28 +105,20 @@ li {
       text-align: left; }
 
 #shop {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 100vh;
+  align-items: center; }
   #shop .content {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    justify-content: space-between;
-    padding: 4em 4em 4em 0; }
+    display: flex;
+    justify-content: space-between; }
   #shop .item {
     width: 49%;
     overflow: hidden;
     position: relative; }
-    #shop .item img {
-      width: 100%;
-      height: 100%; }
     #shop .item .mask {
-      width: 100%;
-      height: 100%;
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
@@ -130,8 +132,8 @@ li {
       -webkit-transition: all 0.6s ease; }
       #shop .item .mask__caption {
         width: 100%;
-        display: flex;
         align-items: flex-end;
+        display: flex;
         justify-content: space-between; }
     #shop .item:hover .mask {
       opacity: 1;
@@ -139,8 +141,6 @@ li {
       padding-bottom: 2em; }
   #shop h2, #shop h3, #shop a {
     color: #fff; }
-  #shop p {
-    text-align: center; }
   #shop .fa-shopping-bag {
     margin-right: 0.4em; }
 
@@ -149,19 +149,13 @@ li {
   display: flex;
   justify-content: center; }
   #contact .content {
-    width: 100vw;
-    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    padding: 4em 4em 4em 0; }
+    justify-content: space-between; }
   #contact .item {
     width: 50%; }
-  #contact img {
-    width: 100%;
-    height: 100%; }
   #contact .text {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     text-align: center; }
     #contact .text__icons {
@@ -171,6 +165,28 @@ li {
         margin-right: 0.4em;
         color: #5b2d2d; }
 
+/*--------------------------------------------------------- Media Queries md ---------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 8em; }
+  h2 {
+    font-size: 2.4em; }
+  h3 {
+    font-size: 1.6em; }
+  p {
+    font-size: 1.2em; }
+  li {
+    font-size: 1.6em; }
+  .contents__side .nav {
+    padding: 1.6em 0; }
+    .contents__side .nav__menu .fa-shopping-bag {
+      font-size: 1.6em;
+      margin-top: 0.4em; }
+  #top {
+    padding-right: 2.4em; } }
+
+/*--------------------------------------------------------- Media Queries sm ---------------------------------------------------------*/
+/*--------------------------------------------------------- Media Queries  xs ---------------------------------------------------------*/
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img//hero.jpg);
