@@ -33,6 +33,9 @@ li {
   list-style: none;
   font-size: 1.6em; }
 
+.box {
+  border: solid 0.2em #5b2d2d; }
+
 #about .content, #shop .content, #contact .content {
   width: 100vw;
   min-height: 100vh;
@@ -126,6 +129,9 @@ li {
     justify-content: space-between; }
   #shop .item {
     width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     position: relative; }
     #shop .item img {
@@ -167,13 +173,13 @@ li {
     justify-content: space-between;
     flex-wrap: wrap; }
   #contact .item {
-    width: 50%; }
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
   #contact img {
     width: 100%; }
   #contact .text {
-    align-items: center;
-    display: flex;
-    justify-content: center;
     text-align: center; }
     #contact .text__icons {
       margin-top: 1em; }

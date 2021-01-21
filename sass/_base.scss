@@ -41,9 +41,9 @@ li {
     font-size: 1.6em;
 }
 
-// .box {
-//     border: solid 0.2em $color-brown;
-// }
+.box {
+    border: solid 0.2em $color-brown;
+}
 
 @mixin flex-justify($justify) {
     display: flex;
@@ -187,6 +187,9 @@ li {
     .item {
         width: 49%;
 
+        @include flex-justify(center);
+        align-items: center;
+
         overflow: hidden;
         position: relative;
 
@@ -252,6 +255,8 @@ li {
 
     .item {
         width: 50%;
+        align-items: center;
+        @include flex-justify(center);
     }
 
     img {
@@ -259,9 +264,6 @@ li {
     }
 
     .text {
-        align-items: center;
-        @include flex-justify(center);
-
         text-align: center;
 
         &__icons {
