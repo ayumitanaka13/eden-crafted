@@ -122,7 +122,7 @@ li {
 // #top
 #top {
     @include flex-justify(flex-end);
-    height: 100vh;
+    min-height: 100vh;
 
     padding-right: 4em;    
     background: url("/img/top.jpg") center center / cover no-repeat fixed;
@@ -135,7 +135,7 @@ li {
 // #about
 #about {
     @include flex-justify(center);
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
 
     .content {
@@ -174,7 +174,7 @@ li {
 // #shop
 #shop {
     @include flex-justify(center);
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
 
     .content {
@@ -241,7 +241,7 @@ li {
 
 // #contact
 #contact {
-    height: 100vh;
+    min-height: 100vh;
     @include flex-justify(center);
 
     .content {
