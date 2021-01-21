@@ -302,15 +302,20 @@ li {
         font-size: 1.2em;
     }
 
-    .nav {
-        padding: 2em 0;
-
-        &__logo {
-            img {
-                width: 80%;
+    .contents {
+        &__side {
+            .nav {
+                padding: 2em 0;
+        
+                &__logo {
+                    img {
+                        width: 80%;
+                    }
+                }
             }
         }
     }
+
 
     #top {
         padding-right: 2.4em;    

@@ -193,9 +193,9 @@ li {
     font-size: 1em; }
   li {
     font-size: 1.2em; }
-  .nav {
+  .contents__side .nav {
     padding: 2em 0; }
-    .nav__logo img {
+    .contents__side .nav__logo img {
       width: 80%; }
   #top {
     padding-right: 2.4em; }
