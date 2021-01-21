@@ -21,10 +21,11 @@
             position: fixed;
             padding: 4em 0;
 
+
             &__logo {
                 @include flex-justify(center);
                 img {
-                    width: 8em;
+                    width: 50%;
                 }
             }
 
@@ -61,7 +62,7 @@
         
                 &__logo {
                     img {
-                        width: 8em;
+                        width: 80%;
                     }
                 }
             }
@@ -71,19 +72,11 @@
 
 @media (max-width: 576px) {
 
-    .contents {
-        &__side {
-            width: 15%;
-            .nav {
-                &__logo {
-                    img {
-                        width: 4em;
-                    }
-                }
-            }
-        }
-        &__main {
-            width: 85%;
-        }
+    .contents__side {
+        width: 15%;
     }
-} 
+
+    .contents__main {
+        width: 85%;
+    } 
+}

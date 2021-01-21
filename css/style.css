@@ -37,6 +37,9 @@ li {
   list-style: none;
   font-size: 1.6em; }
 
+.box {
+  border: solid 2px #5b2d2d; }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 6.4em; }
@@ -76,7 +79,7 @@ li {
         display: flex;
         justify-content: center; }
         .contents__side .nav__logo img {
-          width: 50%; }
+          width: 8em; }
       .contents__side .nav__menu {
         display: flex;
         justify-content: center; }
@@ -95,11 +98,13 @@ li {
   .contents__side .nav {
     padding: 2em 0; }
     .contents__side .nav__logo img {
-      width: 80%; } }
+      width: 8em; } }
 
 @media (max-width: 576px) {
   .contents__side {
     width: 15%; }
+    .contents__side .nav__logo img {
+      width: 4em; }
   .contents__main {
     width: 85%; } }
 
@@ -200,6 +205,7 @@ li {
     animation-duration: 1s;
     animation-timing-function: ease-out; }
     #shop .item .mask {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
