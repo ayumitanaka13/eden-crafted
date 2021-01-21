@@ -54,6 +54,10 @@ li {
     width: 100vw;
     height: 100vh;
     padding: 4em 4em 4em 0;
+
+    @media (max-width: 576px) {
+        padding: 2em;
+    }
 }
 
 %full-size {
@@ -76,10 +80,11 @@ li {
             @include flex-justify(space-between);
         
             position: fixed;
-            padding: 2em 0 4em 0;
+            padding: 4em 0 4em 0;
 
             img {
-                width: 100%
+                width: 100%;
+                padding: 0.8em;
             }
 
             &__menu {
@@ -132,6 +137,7 @@ li {
 
     .content {
         @extend %content-style;
+        align-content: space-between;
     }
 
     img {
@@ -144,7 +150,7 @@ li {
     }
 
     p {
-        padding: 0 1.6em;
+        padding: 0 0.8em;
     }
 
     .picture {
@@ -153,7 +159,7 @@ li {
         &--text {
             position: absolute;
             left: 0.8em;
-            bottom: 0.8em;
+            bottom: 1.2em;
     
             text-align: left;
         }
@@ -203,9 +209,9 @@ li {
 
             &__caption {
                 width: 100%;
+                flex-wrap: wrap;
                 align-items: flex-end;
-                @include flex-justify(space-between);
-                
+                @include flex-justify(space-between);   
             }
         }
 
@@ -233,7 +239,7 @@ li {
     .content {
         @extend %content-style;
         @include flex-justify(space-between);
-
+        flex-wrap: wrap;
     }
 
     .item {
@@ -262,40 +268,40 @@ li {
     }
 }
 
-/*--------------------------------------------------------- Media Queries md ---------------------------------------------------------*/
+// @media (max-width: 768px)
+@media (max-width: 768px) {
 
-@media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
         font-size: 8em;
     }
 
     h2 {
-        font-size: 2.4em;
+        font-size: 1.6em;
     }
       
     h3 {
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
     
     p {
-        font-size: 1.2em;
+        font-size: 1em;
     }    
 
     li {
         font-size: 1.6em;
     }
 
-    .contents {
-        &__side {    
-            .nav {
-                padding: 1.6em 0;
+    .nav {
+        padding: 2em 0 2em 0;
 
-                &__menu {
-                    .fa-shopping-bag {
-                        font-size: 1.6em;
-                        margin-top: 0.4em;
-                    }
-                }
+        img {
+            padding: 1.6em;
+        }
+
+        &__menu {
+            .fa-shopping-bag {
+                font-size: 1.6em;
+                margin-top: 0.4em;
             }
         }
     }
@@ -303,21 +309,79 @@ li {
     #top {
         padding-right: 2.4em;    
     }
+
+    #about {
+        p {
+            padding: 0;
+        }
+    }
+
+    #shop {
+        .item {
+            width: 48%;
+        }
+    }    
     
+    #contact {
+        .item {
+            width: 100%;
+        }
 
-
+        h2 {
+            margin-top: 0.4em;
+        }
+    }
 }
 
-/*--------------------------------------------------------- Media Queries sm ---------------------------------------------------------*/
+// @media (max-width: 576px)
+@media (max-width: 576px) {
+    h1 {
+        font-size: 4em;
+    }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+    h2 {
+        font-size: 1.2em;
+    }
+      
+    h3 {
+        font-size: 1em;
+    }
     
-}
+    p {
+        font-size: 1em;
+    }    
 
-/*--------------------------------------------------------- Media Queries  xs ---------------------------------------------------------*/
+    li {
+        font-size: 1.2em;
+    }
 
-@media (max-width: 575.98px) {
+    .contents__side {
+        display: none;
+    }
 
+    .contents__main {
+        width: 100%;
+    }
 
+    .nav {
+        padding: 2em 0 2em 0;
+
+        img {
+            padding: 0;
+        }
+
+        &__menu {
+            .fa-shopping-bag {
+                font-size: 1.2em;
+                margin-top: 0;
+            }
+        }
+    }
+
+    #shop {
+        .item {
+            width: 100%;
+        }
+    }  
 }
   

@@ -37,6 +37,9 @@ li {
   width: 100vw;
   height: 100vh;
   padding: 4em 4em 4em 0; }
+  @media (max-width: 576px) {
+    #about .content, #shop .content, #contact .content {
+      padding: 2em; } }
 
 #shop .item img, #shop .item .mask, #contact img {
   width: 100%;
@@ -56,9 +59,10 @@ li {
       display: flex;
       justify-content: space-between;
       position: fixed;
-      padding: 2em 0 4em 0; }
+      padding: 4em 0 4em 0; }
       .contents__side .nav img {
-        width: 100%; }
+        width: 100%;
+        padding: 0.8em; }
       .contents__side .nav__menu {
         display: flex;
         justify-content: center; }
@@ -89,19 +93,21 @@ li {
   justify-content: center;
   height: 100vh;
   align-items: center; }
+  #about .content {
+    align-content: space-between; }
   #about img {
     width: 100%;
     margin: 1.6em 0; }
   #about h2 {
     text-align: right; }
   #about p {
-    padding: 0 1.6em; }
+    padding: 0 0.8em; }
   #about .picture {
     position: relative; }
     #about .picture--text {
       position: absolute;
       left: 0.8em;
-      bottom: 0.8em;
+      bottom: 1.2em;
       text-align: left; }
 
 #shop {
@@ -132,6 +138,7 @@ li {
       -webkit-transition: all 0.6s ease; }
       #shop .item .mask__caption {
         width: 100%;
+        flex-wrap: wrap;
         align-items: flex-end;
         display: flex;
         justify-content: space-between; }
@@ -150,7 +157,8 @@ li {
   justify-content: center; }
   #contact .content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
   #contact .item {
     width: 50%; }
   #contact .text {
@@ -165,28 +173,60 @@ li {
         margin-right: 0.4em;
         color: #5b2d2d; }
 
-/*--------------------------------------------------------- Media Queries md ---------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 8em; }
   h2 {
-    font-size: 2.4em; }
-  h3 {
     font-size: 1.6em; }
-  p {
+  h3 {
     font-size: 1.2em; }
+  p {
+    font-size: 1em; }
   li {
     font-size: 1.6em; }
-  .contents__side .nav {
-    padding: 1.6em 0; }
-    .contents__side .nav__menu .fa-shopping-bag {
+  .nav {
+    padding: 2em 0 2em 0; }
+    .nav img {
+      padding: 1.6em; }
+    .nav__menu .fa-shopping-bag {
       font-size: 1.6em;
       margin-top: 0.4em; }
   #top {
-    padding-right: 2.4em; } }
+    padding-right: 2.4em; }
+  #about p {
+    padding: 0; }
+  #shop .item {
+    width: 48%; }
+  #contact .item {
+    width: 100%; }
+  #contact h2 {
+    margin-top: 0.4em; } }
 
-/*--------------------------------------------------------- Media Queries sm ---------------------------------------------------------*/
-/*--------------------------------------------------------- Media Queries  xs ---------------------------------------------------------*/
+@media (max-width: 576px) {
+  h1 {
+    font-size: 4em; }
+  h2 {
+    font-size: 1.2em; }
+  h3 {
+    font-size: 1em; }
+  p {
+    font-size: 1em; }
+  li {
+    font-size: 1.2em; }
+  .contents__side {
+    display: none; }
+  .contents__main {
+    width: 100%; }
+  .nav {
+    padding: 2em 0 2em 0; }
+    .nav img {
+      padding: 0; }
+    .nav__menu .fa-shopping-bag {
+      font-size: 1.2em;
+      margin-top: 0; }
+  #shop .item {
+    width: 100%; } }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img//hero.jpg);
