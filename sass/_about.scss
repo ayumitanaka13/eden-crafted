@@ -1,0 +1,44 @@
+#about {
+    @include base-style(center, center);
+
+    .content {
+        @include content-style(flex-end);
+    }
+
+    img {
+        width: 100%;
+
+        @include animation(moveInBottom);
+    }
+
+    h2 {
+        @include animation(moveInRight);
+        text-align: right;
+    }
+
+    p {
+        @include animation(moveInBottom);
+        padding: 0 0.8em;
+    }
+
+    .picture {
+        position: relative;
+
+        &--text {
+            position: absolute;
+            left: 1.2em;
+            bottom: 1.2em;
+    
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    #about {
+        p {
+            padding: 0;
+        }
+    }
+}

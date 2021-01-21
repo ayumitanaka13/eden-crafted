@@ -5,7 +5,7 @@
     }
 
     80%{
-        transform: translateX(10px);
+        transform: translateX(0);
     }
 
     100%{
@@ -20,7 +20,7 @@
     }
 
     80%{
-        transform: translateX(-10px);
+        transform: translateX(0);
     }
 
     100%{
@@ -37,5 +37,14 @@
     100%{
         opacity: 1; 
         transform: translate(0);
+    }
+}
+@keyframes changeOpacity {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }

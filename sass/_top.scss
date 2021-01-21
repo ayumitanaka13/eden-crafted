@@ -1,0 +1,21 @@
+#top {
+    @include base-style(flex-start, flex-end);
+
+    @include animation(changeOpacity);
+    animation-duration: 2s;
+
+    padding-right: 4em;    
+    background: url("/img/top.jpg") center center / cover no-repeat fixed;
+
+    h1 {
+        @include animation(moveInRight);
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #top {
+        padding-right: 2.4em;
+    }    
+}

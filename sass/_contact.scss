@@ -1,0 +1,51 @@
+#contact {
+    @include base-style(center, center);
+
+    .content {
+        @include content-style(space-between);   
+    }
+
+    .item {
+        width: 50%;
+
+        @include flex-justify(center);
+        align-items: center;
+
+        @include animation(moveInBottom);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .text {
+        text-align: center;
+
+        &__icons {
+            margin-top: 1em;
+    
+            a {
+                margin-right: 0.4em;
+                color: $color-brown;
+
+                &:hover {
+                    color: $color-white;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    #contact {
+        .item {
+            width: 100%;
+        }
+
+        h2 {
+            margin-top: 0.4em;
+        }
+    }
+}

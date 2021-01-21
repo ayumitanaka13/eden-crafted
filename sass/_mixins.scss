@@ -4,69 +4,35 @@
     animation-timing-function: ease-out;
 }
 
-// @mixin vertical-align($position) {
-//     position:$position;
-//     top: 50%;
-//     -webkit-transform: translateY(-50%);
-//     -ms-transform: translateY(-50%);
-//     transform: translateY(-50%);
-//   }
-  
-//   @mixin all-transition($time)
-//   {
-//     transition: all $time;
-//     -webkit-transition: all $time;
-//   }
+@mixin base-style($align, $justify){
+    min-height: 100vh;
 
-//   .nav__menu {
-//     width: 150px;
-//     height: 100%;
-//     padding-left: 50px;
-//     position: fixed;
-//     z-index: 100;
-//     -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.2);
-//     box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.2);
-//     right: -130px;
-//     @include all-transition(0.3s);
-//     color: #222;
-  
-//     &:hover, &:focus
-//     {
-//       transform: translate3d(-130px, 0, 0);
-//       animation-timing-function: 1s ease-in;
-//     }
-//     .title
-//     {
-//       top:50%;
-//       @include vertical-align(absolute);
-//       transform: rotate(270deg);
-//       left: 10px;
-//       font-weight: 800;
-//       font-size: 15px;
-  
-//     }
-//     ul
-//     {
-//       @include vertical-align(absolute);
-//       font-weight: 100;
-  
-//       li
-//       {
-//           padding-bottom: 30px;
-//           list-style-type: none;
-  
-//           a
-//           {
-//             display: block;
-//             text-decoration: none;
-//             color: inherit;
-//             @include all-transition(0.3s);
-  
-//             &:hover
-//             {
-//               color: #aaa;
-//             }
-//           }
-//       }
-//     }  
-//   }
+    display: flex;
+    align-content: $align;
+    justify-content: $justify;
+}
+
+@mixin content-style($justify){
+    width: 100vw;
+    min-height: 100vh;
+    padding: 4em 4em 4em 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-content: space-between;
+
+    @media (max-width: 768px) {
+        padding: 2em 2em 2em 0;
+    }
+    @media (max-width: 576px) {
+        padding: 0 2em 0 0;
+
+        align-content: center;
+    }
+}
+
+@mixin flex-justify($justify) {
+    display: flex;
+    justify-content: $justify;
+}
