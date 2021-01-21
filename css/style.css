@@ -76,7 +76,8 @@ li {
         display: flex;
         justify-content: center; }
         .contents__side .nav__logo img {
-          width: 8em; }
+          width: 8em;
+          height: 8em; }
       .contents__side .nav__menu {
         display: flex;
         justify-content: center; }
@@ -93,15 +94,14 @@ li {
 
 @media (max-width: 768px) {
   .contents__side .nav {
-    padding: 2em 0; }
-    .contents__side .nav__logo img {
-      width: 8em; } }
+    padding: 2em 0; } }
 
 @media (max-width: 576px) {
   .contents__side {
     width: 15%; }
     .contents__side .nav__logo img {
-      width: 4em; }
+      width: 3.2em;
+      height: 3.2em; }
   .contents__main {
     width: 85%; } }
 
