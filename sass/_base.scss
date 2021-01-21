@@ -71,7 +71,7 @@ li {
 
 .contents {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 
     &__side {
@@ -79,7 +79,7 @@ li {
         @include flex-justify(center);
 
         .nav {
-            height: 100vh;
+            min-height: 100vh;
             flex-direction: column;
             @include flex-justify(space-between);
         
