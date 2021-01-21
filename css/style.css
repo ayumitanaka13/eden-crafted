@@ -33,9 +33,6 @@ li {
   list-style: none;
   font-size: 1.6em; }
 
-.box {
-  border: solid 0.2em #5b2d2d; }
-
 #about .content, #shop .content, #contact .content {
   width: 100vw;
   min-height: 100vh;
@@ -60,7 +57,7 @@ li {
     display: flex;
     justify-content: center; }
     .contents__side .nav {
-      min-height: 100vh;
+      height: 100vh;
       flex-direction: column;
       display: flex;
       justify-content: space-between;

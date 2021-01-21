@@ -41,9 +41,9 @@ li {
     font-size: 1.6em;
 }
 
-.box {
-    border: solid 0.2em $color-brown;
-}
+// .box {
+//     border: solid 0.2em $color-brown;
+// }
 
 @mixin flex-justify($justify) {
     display: flex;
@@ -79,7 +79,7 @@ li {
         @include flex-justify(center);
 
         .nav {
-            min-height: 100vh;
+            height: 100vh;
             flex-direction: column;
             @include flex-justify(space-between);
         
