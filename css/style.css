@@ -38,7 +38,7 @@ li {
 
 #about .content, #shop .content, #contact .content {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 4em 4em 4em 0; }
   @media (max-width: 768px) {
     #about .content, #shop .content, #contact .content {
