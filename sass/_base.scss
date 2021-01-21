@@ -135,9 +135,9 @@ li {
     align-items: center;
 
     .content {
+        @extend %content-style;
         display: flex;
         justify-content: flex-end;
-        @extend %content-style;
         align-content: space-between;
         flex-wrap: wrap;
     }
@@ -211,7 +211,7 @@ li {
             &__caption {
                 width: 100%;
                 flex-wrap: wrap;
-                align-items: flex-end;
+                // align-items: center;
                 @include flex-justify(space-between);   
             }
         }

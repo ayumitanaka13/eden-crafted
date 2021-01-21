@@ -143,7 +143,6 @@ li {
       #shop .item .mask__caption {
         width: 100%;
         flex-wrap: wrap;
-        align-items: flex-end;
         display: flex;
         justify-content: space-between; }
     #shop .item:hover .mask {
