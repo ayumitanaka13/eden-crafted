@@ -15,15 +15,15 @@ h1 {
   font-family: 'Playfair Display', serif; }
 
 h2 {
-  font-size: 3.2em;
-  font-weight: 400; }
-
-h3 {
   font-size: 2.4em;
   font-weight: 400; }
 
-p {
+h3 {
   font-size: 1.6em;
+  font-weight: 400; }
+
+p {
+  font-size: 1.2em;
   text-align: center; }
 
 a {
@@ -67,7 +67,7 @@ li {
         display: flex;
         justify-content: center; }
         .contents__side .nav__logo img {
-          width: 80%; }
+          width: 70%; }
       .contents__side .nav__menu {
         display: flex;
         justify-content: center; }
