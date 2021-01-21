@@ -53,7 +53,7 @@ li {
 
 .contents {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex; }
   .contents__side {
     width: 20%;
