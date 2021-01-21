@@ -80,7 +80,7 @@ li {
             @include flex-justify(space-between);
         
             position: fixed;
-            padding: 4em 0 4em 0;
+            padding: 4em 0;
 
             &__logo {
                 @include flex-justify(center);
@@ -211,7 +211,6 @@ li {
             &__caption {
                 width: 100%;
                 flex-wrap: wrap;
-                // align-items: center;
                 @include flex-justify(space-between);   
             }
         }
@@ -280,7 +279,7 @@ li {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 8em;
+        font-size: 6.4em;
     }
 
     h2 {
@@ -296,16 +295,15 @@ li {
     }    
 
     li {
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
 
     .nav {
-        padding: 2em 0 2em 0;
+        padding: 2em 0;
 
-        &__menu {
-            .fa-shopping-bag {
-                font-size: 1.6em;
-                margin-top: 0.4em;
+        &__logo {
+            img {
+                width: 80%;
             }
         }
     }

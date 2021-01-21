@@ -62,7 +62,7 @@ li {
       display: flex;
       justify-content: space-between;
       position: fixed;
-      padding: 4em 0 4em 0; }
+      padding: 4em 0; }
       .contents__side .nav__logo {
         display: flex;
         justify-content: center; }
@@ -181,7 +181,7 @@ li {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 8em; }
+    font-size: 6.4em; }
   h2 {
     font-size: 1.6em; }
   h3 {
@@ -189,12 +189,11 @@ li {
   p {
     font-size: 1em; }
   li {
-    font-size: 1.6em; }
+    font-size: 1.2em; }
   .nav {
-    padding: 2em 0 2em 0; }
-    .nav__menu .fa-shopping-bag {
-      font-size: 1.6em;
-      margin-top: 0.4em; }
+    padding: 2em 0; }
+    .nav__logo img {
+      width: 80%; }
   #top {
     padding-right: 2.4em; }
   #about p {
