@@ -191,7 +191,7 @@ li {
         position: relative;
 
         img {
-            @extend %full-size;
+            width: 100%;
         }
 
         .mask {
@@ -255,7 +255,7 @@ li {
     }
 
     img {
-        @extend %full-size;
+        width: 100%;
     }
 
     .text {
