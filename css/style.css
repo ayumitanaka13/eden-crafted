@@ -77,7 +77,7 @@ li {
         .contents__side .nav__menu a {
           color: #5b2d2d; }
           .contents__side .nav__menu a:hover {
-            color: #fff; }
+            color: #b67373; }
   .contents__main {
     width: 80%; }
 
@@ -151,7 +151,7 @@ li {
       padding-top: 2em;
       padding-bottom: 2em; }
   #shop h2, #shop h3, #shop a {
-    color: #fff; }
+    color: #b67373; }
   #shop a:hover {
     color: #5b2d2d; }
   #shop .fa-shopping-bag {
@@ -178,7 +178,7 @@ li {
         margin-right: 0.4em;
         color: #5b2d2d; }
         #contact .text__icons a:hover {
-          color: #fff; }
+          color: #b67373; }
 
 @media (max-width: 768px) {
   h1 {
@@ -251,7 +251,7 @@ li {
     text-align: center; }
 
 .heading-primary {
-  color: #fff;
+  color: #b67373;
   text-transform: uppercase;
   margin-bottom: 60px; }
   .heading-primary--main {
@@ -305,9 +305,9 @@ li {
   opacity: 0; }
 
 .btn--white {
-  background-color: #fff; }
+  background-color: #b67373; }
   .btn--white::after {
-    background-color: #fff; }
+    background-color: #b67373; }
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
