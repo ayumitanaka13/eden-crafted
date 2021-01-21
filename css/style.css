@@ -213,20 +213,10 @@ li {
 @media (max-width: 576px) {
   h1 {
     font-size: 4em; }
-  h3 {
-    font-size: 1em; }
-  p {
-    font-size: 1em; }
-  li {
-    font-size: 1.2em; }
   .contents__side {
     display: none; }
   .contents__main {
     width: 100%; }
-  .nav {
-    padding: 2em 0 2em 0; }
-    .nav img {
-      padding: 0; }
   #shop .item {
     width: 100%; } }
 
