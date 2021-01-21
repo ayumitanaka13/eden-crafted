@@ -99,7 +99,6 @@ header {
 
             &__menu {
                 @include flex-justify(center);
-
     
                 li {
                     margin-bottom: 0.4em;
@@ -189,20 +188,22 @@ header {
 
     .item {
         width: 49%;
+        margin: 0.2em 0;
 
-        @include flex-justify(center);
-        align-items: center;
+        // @include flex-justify(center);
+        // align-items: center;
 
         overflow: hidden;
         position: relative;
 
         img {
-            width: 100%;
+            @extend %full-size;
         }
 
         .mask {
             @extend %full-size;
 
+            
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
@@ -361,11 +362,11 @@ header {
     }
 
     .contents__side {
-        width: 10%;
+        width: 15%;
     }
 
     .contents__main {
-        width: 90%;
+        width: 85%;
     }
 
     #shop {
