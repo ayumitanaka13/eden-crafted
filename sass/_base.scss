@@ -41,10 +41,6 @@ li {
     font-size: 1.6em;
 }
 
-.box {
-    border: solid 2px $color-brown;
-}
-
 @media (max-width: 768px) {
 
     h1 {
@@ -74,3 +70,8 @@ li {
         font-size: 4em;
     }
 } 
+
+// check layout
+// .box {
+//     border: solid 2px $color-brown;
+// }
