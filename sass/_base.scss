@@ -55,6 +55,10 @@ li {
     height: 100vh;
     padding: 4em 4em 4em 0;
 
+    @media (max-width: 768px) {
+        padding: 2em 2em 2em 0;
+    }
+
     @media (max-width: 576px) {
         padding: 2em;
     }
