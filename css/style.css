@@ -310,6 +310,8 @@ li {
         margin: 0 0.2em; }
   #contact small {
     margin-top: 0.8em; }
+    #contact small a {
+      color: #5b2d2d; }
 
 @media (max-width: 768px) {
   #contact .item {
