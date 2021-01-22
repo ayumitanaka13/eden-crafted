@@ -71,7 +71,7 @@ li {
       animation-timing-function: ease-out;
       animation-duration: 1.2s;
       position: fixed;
-      padding: 4em 0; }
+      padding: 3.2em 0; }
       .contents__side .nav__logo {
         display: flex;
         justify-content: center; }
@@ -135,7 +135,7 @@ li {
   #about .content {
     width: 100vw;
     min-height: 100vh;
-    padding: 4em 4em 4em 0;
+    padding: 0.8em 4em 0.8em 0;
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0.8em;
@@ -143,10 +143,7 @@ li {
     justify-content: flex-end; }
     @media (max-width: 768px) {
       #about .content {
-        padding: 2em 2em 2em 0; } }
-    @media (max-width: 576px) {
-      #about .content {
-        padding: 0 2em 0 0; } }
+        padding: 0.8em 2em 0.8em 0; } }
   #about img {
     width: 100%;
     animation-name: moveInBottom;
@@ -166,8 +163,8 @@ li {
     position: relative; }
     #about .picture--text {
       position: absolute;
-      left: 1.2em;
-      bottom: 1.2em;
+      left: 1em;
+      bottom: 1em;
       text-align: left; }
 
 @media (max-width: 768px) {
@@ -182,7 +179,7 @@ li {
   #shop .content {
     width: 100vw;
     min-height: 100vh;
-    padding: 4em 4em 4em 0;
+    padding: 0.8em 4em 0.8em 0;
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0.8em;
@@ -190,10 +187,7 @@ li {
     justify-content: space-between; }
     @media (max-width: 768px) {
       #shop .content {
-        padding: 2em 2em 2em 0; } }
-    @media (max-width: 576px) {
-      #shop .content {
-        padding: 0 2em 0 0; } }
+        padding: 0.8em 2em 0.8em 0; } }
   #shop .item {
     width: 49%;
     overflow: hidden;
@@ -251,7 +245,7 @@ li {
   #contact .content {
     width: 100vw;
     min-height: 100vh;
-    padding: 4em 4em 4em 0;
+    padding: 0.8em 4em 0.8em 0;
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0.8em;
@@ -259,10 +253,7 @@ li {
     justify-content: space-between; }
     @media (max-width: 768px) {
       #contact .content {
-        padding: 2em 2em 2em 0; } }
-    @media (max-width: 576px) {
-      #contact .content {
-        padding: 0 2em 0 0; } }
+        padding: 0.8em 2em 0.8em 0; } }
   #contact .item {
     width: 49%;
     display: flex;
