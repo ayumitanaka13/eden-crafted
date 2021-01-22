@@ -53,6 +53,10 @@ li {
   h1 {
     font-size: 4em; } }
 
+@media (max-width: 376px) {
+  h2 {
+    font-size: 1.2em; } }
+
 .contents {
   width: 100vw;
   min-height: 100vh;
@@ -258,7 +262,10 @@ li {
     width: 49%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 3.2em;
     animation-name: moveInBottom;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
@@ -281,9 +288,60 @@ li {
 
 @media (max-width: 768px) {
   #contact .item {
-    width: 100%; }
+    width: 100%;
+    gap: 1.6em; }
   #contact h2 {
     margin-top: 0.4em; } }
+
+@media (max-width: 576px) {
+  small {
+    font-size: 0.4em; } }
+
+form {
+  width: 100%;
+  padding: 0 2.4em; }
+  form input::placeholder, form textarea::placeholder {
+    color: #f5e9e5; }
+  form input, form textarea {
+    width: 100%;
+    height: 4em;
+    padding: 0.8em 1.6em;
+    margin-bottom: 0.8em;
+    font-size: 1.2em;
+    color: #5b2d2d;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7); }
+    form input:hover, form textarea:hover {
+      background-color: #fff; }
+  form #submit {
+    font-size: 1em;
+    color: #fff;
+    border: solid 2.4px #fff;
+    background-color: transparent; }
+    form #submit:hover {
+      color: #f5e9e5;
+      background-color: #fff; }
+  form textarea {
+    height: 5.6em; }
+
+@media (max-width: 768px) {
+  form {
+    padding: 0 1.2em; }
+    form input, form textarea {
+      height: 3.2em;
+      font-size: 1em; }
+    form textarea {
+      height: 5.6em; } }
+
+@media (max-width: 576px) {
+  form {
+    padding: 0 1em; }
+    form input, form textarea {
+      height: 2.4em; }
+    form textarea {
+      height: 5.6em; } }
 
 @keyframes moveInLeft {
   0% {
