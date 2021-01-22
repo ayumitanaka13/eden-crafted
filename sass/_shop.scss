@@ -108,8 +108,12 @@
 @media (max-width: 376px) {
 
     #shop {
+        .content {
+            gap: 1.6em;
+        }
+        
         .item {
-            width: 99%;
+            width: 100%;
         }
     } 
 }
