@@ -220,8 +220,12 @@ li {
       opacity: 1;
       padding-top: 2em;
       padding-bottom: 2em; }
-  #shop h2, #shop h3, #shop a {
+  #shop h3, #shop a {
     color: #fff; }
+  #shop h3 {
+    font-size: 1.2em; }
+  #shop p {
+    font-size: 1em; }
   #shop a:hover {
     color: #5b2d2d;
     transition: all 0.4s; }

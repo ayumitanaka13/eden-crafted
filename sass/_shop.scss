@@ -50,8 +50,16 @@
         }
     }
 
-    h2, h3, a {
+    h3, a {
         color: $color-white;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
     }
 
     a:hover {
