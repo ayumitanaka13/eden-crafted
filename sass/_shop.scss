@@ -85,10 +85,22 @@
 
     #shop {
         .item {
+            .mask {
+                padding: 0.4em 0.4em;
+            }
+
             &:hover .mask {
                 padding-top: 1.2em;
                 padding-bottom: 1.2em;
             }
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+    
+        p {
+            font-size: 0.8em;
         }
     }
 }
@@ -98,18 +110,6 @@
     #shop {
         .item {
             width: 100%;
-
-            .mask {
-                padding: 0.4em 1.6em;
-            }
-        }
-        
-        h3 {
-            font-size: 1em;
-        }
-    
-        p {
-            font-size: 0.8em;
         }
     } 
 }

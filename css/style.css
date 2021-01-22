@@ -53,7 +53,7 @@ li {
   h1 {
     font-size: 4em; }
   h2 {
-    font-size: 1.4em; } }
+    font-size: 1.3em; } }
 
 .contents {
   width: 100vw;
@@ -235,19 +235,19 @@ li {
     width: 48%; } }
 
 @media (max-width: 576px) {
+  #shop .item .mask {
+    padding: 0.4em 0.4em; }
   #shop .item:hover .mask {
     padding-top: 1.2em;
-    padding-bottom: 1.2em; } }
-
-@media (max-width: 376px) {
-  #shop .item {
-    width: 100%; }
-    #shop .item .mask {
-      padding: 0.4em 1.6em; }
+    padding-bottom: 1.2em; }
   #shop h3 {
     font-size: 1em; }
   #shop p {
     font-size: 0.8em; } }
+
+@media (max-width: 376px) {
+  #shop .item {
+    width: 100%; } }
 
 #contact {
   min-height: 100vh;
