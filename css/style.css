@@ -53,6 +53,9 @@ li {
   h1 {
     font-size: 4em; } }
 
+.box {
+  border: solid 2px #5b2d2d; }
+
 .contents {
   width: 100vw;
   min-height: 100vh;
@@ -101,7 +104,8 @@ li {
     width: 15%; }
     .contents__side .nav__logo img {
       width: 3.2em;
-      height: 3.2em; }
+      height: 3.2em;
+      padding: 0.2em; }
   .contents__main {
     width: 85%; } }
 
@@ -210,7 +214,7 @@ li {
       left: 0;
       bottom: 0;
       opacity: 0;
-      padding: 1em 2em;
+      padding: 0.8em 2em;
       background-color: rgba(0, 0, 0, 0.2);
       transition: all 0.6s ease;
       -webkit-transition: all 0.6s ease; }
@@ -233,11 +237,14 @@ li {
 
 @media (max-width: 768px) {
   #shop .item .mask {
-    padding: 1em; } }
+    padding: 0.8em; } }
 
 @media (max-width: 576px) {
   #shop .item {
-    width: 100%; } }
+    width: 100%; }
+    #shop .item:hover .mask {
+      padding-top: 1.2em;
+      padding-bottom: 1.2em; } }
 
 #contact {
   min-height: 100vh;

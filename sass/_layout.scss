@@ -59,11 +59,6 @@
         &__side {
             .nav {
                 padding: 2em 0;        
-                // &__logo {
-                //     img {
-                //         width: 8em;
-                //     }
-                // }
             }
         }
     }
@@ -79,6 +74,7 @@
                     img {
                         width: 3.2em;
                         height: 3.2em;
+                        padding: 0.2em;
                     }
                 }
             }
