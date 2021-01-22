@@ -3,11 +3,14 @@
 
     .content {
         @include content-style(space-between);
+        //gap: 0;
     }
 
     .item {
-        width: 49%;
-
+        //width: 49%;
+        width: 24%;
+        //padding: 0.4em;
+        
         overflow: hidden;
         position: relative;
 
@@ -83,7 +86,8 @@
 
     #shop {
         .item {
-            width: 100%;
+            //width: 100%;
+            width: 47%;
 
             &:hover .mask {
                 padding-top: 1.2em;
