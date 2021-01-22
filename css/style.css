@@ -146,6 +146,9 @@ li {
     @media (max-width: 768px) {
       #about .content {
         padding: 2em 2em 2em 0; } }
+    @media (max-width: 576px) {
+      #about .content {
+        padding: 0.8 2em 0.8em 0.2em; } }
   #about img {
     width: 100%;
     animation-name: moveInBottom;
@@ -190,6 +193,9 @@ li {
     @media (max-width: 768px) {
       #shop .content {
         padding: 2em 2em 2em 0; } }
+    @media (max-width: 576px) {
+      #shop .content {
+        padding: 0.8 2em 0.8em 0.2em; } }
   #shop .item {
     width: 24%;
     overflow: hidden;
@@ -266,6 +272,9 @@ li {
     @media (max-width: 768px) {
       #contact .content {
         padding: 2em 2em 2em 0; } }
+    @media (max-width: 576px) {
+      #contact .content {
+        padding: 0.8 2em 0.8em 0.2em; } }
   #contact .item {
     width: 49%;
     display: flex;
