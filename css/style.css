@@ -175,7 +175,8 @@ li {
 
 @media (max-width: 768px) {
   #about p {
-    padding: 0; } }
+    padding: 0;
+    margin-top: 0.4em; } }
 
 #shop {
   min-height: 100vh;
@@ -311,7 +312,7 @@ li {
 @media (max-width: 768px) {
   #contact .item {
     width: 100%;
-    gap: 1.6em; }
+    gap: 2.4em; }
   #contact h2 {
     margin-top: 0.4em; } }
 
