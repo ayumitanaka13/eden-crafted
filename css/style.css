@@ -147,7 +147,7 @@ li {
     justify-content: flex-end; }
     @media (max-width: 768px) {
       #about .content {
-        padding: 0.8em 2em 0.8em 0; } }
+        padding: 1.6em 2em 1.6em 0; } }
   #about img {
     width: 100%;
     animation-name: moveInBottom;
@@ -191,7 +191,7 @@ li {
     justify-content: space-between; }
     @media (max-width: 768px) {
       #shop .content {
-        padding: 0.8em 2em 0.8em 0; } }
+        padding: 1.6em 2em 1.6em 0; } }
   #shop .item {
     width: 24%;
     overflow: hidden;
@@ -243,7 +243,9 @@ li {
 
 @media (max-width: 376px) {
   #shop .item {
-    width: 100%; } }
+    width: 100%; }
+    #shop .item .mask {
+      padding: 0.4em 1.6em; } }
 
 #contact {
   min-height: 100vh;
@@ -261,7 +263,7 @@ li {
     justify-content: flex-end; }
     @media (max-width: 768px) {
       #contact .content {
-        padding: 0.8em 2em 0.8em 0; } }
+        padding: 1.6em 2em 1.6em 0; } }
   #contact .item {
     width: 49%;
     display: flex;
