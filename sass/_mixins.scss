@@ -17,10 +17,11 @@
     min-height: 100vh;
     padding: 4em 4em 4em 0;
 
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    gap: 0.8em;
+    align-content: center;
     justify-content: $justify;
-    align-content: space-between;
 
     @media (max-width: 768px) {
         padding: 2em 2em 2em 0;

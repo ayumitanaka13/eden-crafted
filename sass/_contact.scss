@@ -2,11 +2,11 @@
     @include base-style(center, center);
 
     .content {
-        @include content-style(space-between);   
+        @include content-style(space-between);
     }
 
     .item {
-        width: 50%;
+        width: 49%;
 
         @include flex-justify(center);
         align-items: center;

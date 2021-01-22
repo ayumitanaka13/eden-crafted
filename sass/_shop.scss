@@ -7,7 +7,6 @@
 
     .item {
         width: 49%;
-        margin: 0.2em 0;
 
         overflow: hidden;
         position: relative;
@@ -16,11 +15,12 @@
 
         img {
             @extend %full-size;
+            //width: 100%;
         }
 
         .mask {
             @extend %full-size;
-            width: 100%;
+            //height: 100%;
 
             display: flex;
             flex-wrap: wrap;
@@ -70,6 +70,8 @@
 
     #shop {
         .item {
+            width: 48%;
+
             .mask {
                 padding: 0.8em;
             }
