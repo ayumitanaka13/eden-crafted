@@ -36,8 +36,8 @@
         &__icons {
             margin-top: 1em;
     
-            .fa-facebook-f {
-                margin-right: 0.4em;
+            .fa-instagram-square {
+                margin: 0 0.2em;
             }
         }
     }
@@ -63,8 +63,9 @@
 }
 
 @media (max-width: 576px) {
-
-    small {
-        font-size: 0.4em;
+    #contact {
+        small {
+            font-size: 0.4em;
+        }
     }
 } 

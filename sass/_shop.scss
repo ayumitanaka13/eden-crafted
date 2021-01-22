@@ -3,13 +3,10 @@
 
     .content {
         @include content-style(space-between);
-        //gap: 0;
     }
 
     .item {
-        //width: 49%;
         width: 24%;
-        //padding: 0.4em;
         
         overflow: hidden;
         position: relative;
@@ -18,12 +15,10 @@
 
         img {
             @extend %full-size;
-            //width: 100%;
         }
 
         .mask {
             @extend %full-size;
-            //height: 100%;
 
             display: flex;
             flex-wrap: wrap;
@@ -74,10 +69,6 @@
     #shop {
         .item {
             width: 48%;
-
-            .mask {
-                padding: 0.8em;
-            }
         }
     } 
 }
@@ -86,13 +77,19 @@
 
     #shop {
         .item {
-            //width: 100%;
-            width: 47%;
-
             &:hover .mask {
                 padding-top: 1.2em;
                 padding-bottom: 1.2em;
             }  
         }
     }
+}
+
+@media (max-width: 376px) {
+
+    #shop {
+        .item {
+            width: 100%;
+        }
+    } 
 }
