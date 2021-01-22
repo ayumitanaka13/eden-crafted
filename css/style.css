@@ -245,7 +245,11 @@ li {
   #shop .item {
     width: 100%; }
     #shop .item .mask {
-      padding: 0.4em 1.6em; } }
+      padding: 0.4em 1.6em; }
+  #shop h3 {
+    font-size: 1em; }
+  #shop p {
+    font-size: 0.8em; } }
 
 #contact {
   min-height: 100vh;
