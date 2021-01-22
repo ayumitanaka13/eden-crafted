@@ -250,7 +250,7 @@ li {
     flex-wrap: wrap;
     gap: 0.8em;
     align-content: center;
-    justify-content: space-between; }
+    justify-content: flex-end; }
     @media (max-width: 768px) {
       #contact .content {
         padding: 0.8em 2em 0.8em 0; } }
@@ -266,14 +266,18 @@ li {
     width: 100%; }
   #contact .text {
     text-align: center; }
+    #contact .text a {
+      color: #5b2d2d; }
+      #contact .text a:hover {
+        color: #fff;
+        transition: all 0.4s; }
     #contact .text__icons {
       margin-top: 1em; }
-      #contact .text__icons a {
-        margin-right: 0.4em;
-        color: #5b2d2d; }
-        #contact .text__icons a:hover {
-          color: #fff;
-          transition: all 0.4s; }
+      #contact .text__icons .fa-facebook-f {
+        margin-right: 0.4em; }
+  #contact small {
+    margin-top: 0.8em;
+    color: #fff; }
 
 @media (max-width: 768px) {
   #contact .item {

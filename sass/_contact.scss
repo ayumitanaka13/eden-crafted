@@ -2,7 +2,7 @@
     @include base-style(center, center);
 
     .content {
-        @include content-style(space-between);
+        @include content-style(flex-end);
     }
 
     .item {
@@ -21,19 +21,27 @@
     .text {
         text-align: center;
 
+        a {
+            color: $color-brown;
+
+            &:hover {
+                color: $color-white;
+                transition: all 0.4s;
+            }
+        }
+
         &__icons {
             margin-top: 1em;
     
-            a {
+            .fa-facebook-f {
                 margin-right: 0.4em;
-                color: $color-brown;
-
-                &:hover {
-                    color: $color-white;
-                    transition: all 0.4s;
-                }
             }
         }
+    }
+
+    small {
+        margin-top: 0.8em;
+        color: $color-white;
     }
 }
 
