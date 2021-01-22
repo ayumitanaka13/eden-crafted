@@ -243,11 +243,13 @@ li {
     width: 48%; } }
 
 @media (max-width: 576px) {
-  #shop .item .mask {
-    padding: 0.4em 0.8em; }
-  #shop .item:hover .mask {
-    padding-top: 1.2em;
-    padding-bottom: 1.2em; }
+  #shop .item {
+    width: 47%; }
+    #shop .item .mask {
+      padding: 0.4em 0.8em; }
+    #shop .item:hover .mask {
+      padding-top: 1.2em;
+      padding-bottom: 1.2em; }
   #shop h3 {
     font-size: 1em; }
   #shop p {
