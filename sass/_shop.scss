@@ -20,9 +20,7 @@
         .mask {
             @extend %full-size;
 
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
+            @include flex-wrap-align(flex, space-between);
     
             position: absolute;
             left: 0;
@@ -86,7 +84,7 @@
     #shop {
         .item {
             width: 47%;
-            
+
             .mask {
                 padding: 0.4em 0.8em;
             }

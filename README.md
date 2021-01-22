@@ -2,7 +2,7 @@
 
 ## About
 
-A handcrafted hand soap web site.
+A handcrafted soap web site.
 
 ## Preview
 

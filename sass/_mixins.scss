@@ -36,3 +36,9 @@
     display: flex;
     justify-content: $justify;
 }
+
+@mixin flex-wrap-align($display, $align) {
+    display: $display;
+    flex-wrap: wrap;
+    align-content: $align;
+}
